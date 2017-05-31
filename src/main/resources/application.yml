@@ -1,0 +1,15 @@
+spring:
+  profiles: default
+  data:
+    mongodb:
+      host: localhost
+      port: 32768
+      database: apps
+
+---
+spring:
+  profiles: local
+spring.data.mongodb:
+  host: localhost
+  port: 27017
+  database: apps
